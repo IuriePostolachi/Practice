@@ -5,7 +5,7 @@
     display: flex
   &-text
     flex-basis: 50%
-    padding-right: 60px
+    padding-right: 100px
     margin-left: -3px
     margin-top: -2px
     &__title
@@ -43,6 +43,7 @@
   &-image
     margin-right: -32px
     margin-top: -5px
+    padding-left: 9px
     &__top-main
       max-width: 106%
       
@@ -54,6 +55,7 @@
       margin-bottom: 44px
     &-text
       margin-right: 0
+
 @media (max-width: 768px)
   .hero
     &-text
@@ -69,3 +71,22 @@
         margin-bottom: 20px
       &__text
         font-size: 12px
+
+@media (max-width: 322px)
+  .hero
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      &__item
+        margin-bottom: 20px
+      &__text
+        font-size: 12px
+    &-image
+      &__top-main
+        max-width: 350px

@@ -66,7 +66,7 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 65px 0;
 }
 
 .section-title {
@@ -76,8 +76,14 @@ body {
 }
 
 .section-subtitle {
-  display: block;
   font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 24px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 /* Импорт стилей навигационного меню */
@@ -148,6 +154,13 @@ body {
   }
 }
 
+@media (max-width: 322px) {
+  .container {
+    max-width: 260px;
+    width: 95%;
+  }
+}
+
 /* Стили для главного экрана */
 .hero {
   padding-top: 50px;
@@ -163,7 +176,7 @@ body {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 60px;
+  padding-right: 100px;
   margin-left: -3px;
   margin-top: -2px;
 }
@@ -229,6 +242,7 @@ body {
 .hero-image {
   margin-right: -32px;
   margin-top: -5px;
+  padding-left: 9px;
 }
 
 .hero-image__top-main {
@@ -268,9 +282,49 @@ body {
   }
 }
 
+@media (max-width: 322px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+  .hero-image__top-main {
+    max-width: 350px;
+  }
+}
+
+.offer {
+  background: url("../img/offer/offer-bg.png");
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
 .offer-block {
   width: 50%;
   padding-right: 90px;
+  margin-top: -6px;
+  position: relative;
 }
 
 .offer__title {
@@ -282,6 +336,85 @@ body {
 .offer__subtitle {
   max-width: 320px;
   font-size: 16px;
+  display: inline-block;
   margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-family: +bold;
+}
+
+.offer-info {
+  font-size: 15px;
+}
+
+.offer__callback {
+  margin-top: 25px;
+  display: inline-block;
+  width: 224px;
+  height: auto;
+  line-height: 24px;
+}
+
+.offer__callself {
+  display: inline-block;
+  line-height: 24px;
+  margin-left: 70px;
+  width: 192px;
+  height: 39px;
+}
+
+.offer__tell {
+  font-family: +bold;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer__callback {
+    margin-top: 5%;
+    width: 290px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .offer__callself {
+    width: 290px;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
