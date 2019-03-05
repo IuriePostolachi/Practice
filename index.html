@@ -25,7 +25,7 @@
                         <a href="" class="navbar__phone">+7 (495) 42-251-31</a>
                     </div>
                     <!-- /.navbar__contacts -->
-                    <button class="button navbar__button" id="button">Перезвоним вам сами</button>
+                    <button class="button navbar__button" id="button">Перезвоните мне</button>
                 </div>
                 <!-- /.navbar__info -->
             </div>
@@ -33,7 +33,7 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- /.navbar -->
+
     <!-- Тело сайта -->
     <main>
         <!-- Секция - ознокомительная секция сайта -->
@@ -48,7 +48,7 @@
                         </span>
                         <!-- Список предложений -->
                         <ul class="hero-list">
-                            <!-- Первое предложения -->
+                            <!-- Список Первого предложения -->
                             <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/clock.png" alt="clock">
@@ -56,6 +56,7 @@
                                 <span class="hero-list__text">Точно соблюдаем сроки
                                 </span>
                             </li>
+                            <!--  Список Второго предложения -->
                             <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/calculator.png" alt="calculator">
@@ -63,6 +64,7 @@
                                 <span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения
                                 </span>
                             </li>
+                            <!-- Список Третьего предложения -->
                             <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/paint-board.png" alt="paint-board">
@@ -84,6 +86,7 @@
             <!-- /.container -->
         </section>
         <!-- /.hero -->
+
         <!-- Секция - предложения бесплатного дизайна -->
         <section class="offer section">
             <div class="container">
@@ -115,20 +118,23 @@
         </section>
         <!-- /.offer -->
     </main>
+
+    <!-- Модальные окна сайта -->
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times;</button>
             <!-- /.modal-dialog__close -->
             <fieldset class="modal-dialog__title">
                 <legend class="legend">Ваши контактные данные</legend>
-                <label for="user-name" class="label-name">Как вас зовут</label>
-                <!-- /.label-name -->
-                <input type="text" class="user-name" id="user-name" placeholder="Имя" required maxlength="25" minlength="2" autofocus><br>
-                <label for="phone" class="label-phone">Ваш номер</label> 
-                <!-- /.label-phone -->
-                <input type="tel" class="user-phone" pattern="+[0-9]{1,3}-[0-9]{9,10}" placeholder="+(7) 000 000 00 00" >
+                <label for="user-name" class="modal-label__name">Как вас зовут</label>
+                <!-- /.modal-label__name -->
+                <input type="text" class="modal-input__name" id="user-name" placeholder="Имя" required maxlength="25" minlength="2" autofocus><br>
+                <label for="phone" class="modal-label__phone">Ваш номер</label>
+                <!-- /.modal-label__phone -->
+                <input type="tel" class="modal-input__phone" pattern="+[0-9]{1,3}-[0-9]{9,10}" placeholder="+(7) 000 000 00 00">
                 <br>
-                <input type="submit" id="send" class="send" value="Отправить">
+                <input type="submit" id="send" class="modal-input__send" value="Отправить">
+                <!-- /.modal_send -->
             </fieldset>
             <!-- /.modal-dialog__title -->
         </div>
@@ -136,7 +142,9 @@
     </div>
     <!-- /.modal -->
 
-    <script src="js/main.js"></script>
+    <!-- Подключеные скриты сайта -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 
