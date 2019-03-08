@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Практика - Домашнее задание №13</title>
 </head>
 
 <body>
+
     <!-- Титульная сайта -->
     <nav class="navbar">
         <div class="container">
@@ -38,7 +40,7 @@
     <main>
 
         <!-- Секция - ознокомительная секция сайта -->
-        <section class="hero section">
+        <section class="hero hero-section">
             <div class="container">
                 <div class="hero-block">
                     <div class="hero-text">
@@ -86,7 +88,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.hero -->
+        <!-- /.hero section -->
 
         <!-- Секция - предложения бесплатного дизайна -->
         <section class="offer section">
@@ -117,7 +119,45 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.offer -->
+        <!-- /.offer section -->
+
+        <section class="portfolio section">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в
+                    квартирах и домах</h2>
+
+                <div class="slider">
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-1.jpg" alt="slider-1"></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-2.jpg" alt="slider-2"></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-3.jpg" alt="slider-3"></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-1.jpg" alt="slider-4"></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-2.jpg" alt="slider-5"></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-3.jpg" alt="slider-6"></div>
+                    <!-- /.slider__item -->
+                </div>
+                <!-- /.slider -->
+                <div class="arrows portfolio__arrows">
+                    <div class="arrows__left">
+                        <img src="img/portfolio/left-arrow.png" alt="">
+                    </div>
+                    <!-- /.arrows__left -->
+                    <div class="arrows__right">
+                        <img src="img/portfolio/right-arrow.png" alt="">
+                    </div>
+                    <!-- /.arrows__right -->
+                </div>
+                <!-- /.arrows -->
+
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.portfolio section -->
+
     </main>
 
     <!-- Модальные окна сайта -->
@@ -129,7 +169,8 @@
                 <legend class="legend">Ваши контактные данные</legend>
                 <label for="user-name" class="modal-label__name">Как вас зовут</label>
                 <!-- /.modal-label__name -->
-                <input type="text" class="modal-input__name" id="user-name" placeholder="Имя" required maxlength="25" minlength="2" autofocus><br>
+                <input type="text" class="modal-input__name" id="user-name" placeholder="Имя" required maxlength="25"
+                    minlength="2" autofocus><br>
                 <label for="phone" class="modal-label__phone">Ваш номер</label>
                 <!-- /.modal-label__phone -->
                 <input type="tel" class="modal-input__phone" pattern="+[0-9]{1,3}-[0-9]{9,10}" placeholder="+(7) 000 000 00 00">
@@ -144,9 +185,15 @@
     <!-- /.modal -->
 
     <!-- Подключеные скриты сайта -->
-    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- Скрипт для модального окна -->
     <script src="js/modal.js"></script>
 
+    <!-- Скрипт для слайда -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>
