@@ -12,6 +12,8 @@ body
   .container
     max-width: 580px
     width: 95%
+  .section
+    padding-top: 60px
 @media (max-width: 567px)
   .container
     max-width: 277px
@@ -21,11 +23,14 @@ body
   background-color: $main-color
   border: none
   padding: 15px 17px
-  margin-right: 22px
   +bold
   &:hover
     background: lighten($main-color, 10%)
     cursor: pointer
+.input
+  border: 1px solid $border-input
+  padding: 23px
+  border-radius: 10px
 .section
   &-title
     font-size: 24px

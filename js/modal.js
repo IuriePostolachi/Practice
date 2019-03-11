@@ -16,13 +16,5 @@ $(document).ready(function() {
     // закрытие модального окна при нажатий на кнопку 'закрыть'
     close.on('click', function() {
         modal.removeClass('modal_active');
-        location.reload();
     });
-
-    // закрытие модального окна при нажатий кнопки 'отправитm'
-    send.on('click', function() {
-        modal.removeClass('modal_active');
-        location.reload();
-    });
-
 });
