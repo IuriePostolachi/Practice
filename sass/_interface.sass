@@ -2,22 +2,11 @@
   box-sizing: border-box
 body
   +reg
+img
+  max-width: 100%
 .container
-  width: 1178px
+  width: 1170px
   margin: auto
-@media (max-width: 1200px)
-  .container
-    width: 760px
-@media (max-width: 768px)
-  .container
-    max-width: 580px
-    width: 95%
-  .section
-    padding-top: 60px
-@media (max-width: 567px)
-  .container
-    max-width: 277px
-    width: 95%
 .button
   border-radius: 10px
   background-color: $main-color
@@ -28,12 +17,14 @@ body
     background: lighten($main-color, 10%)
     cursor: pointer
 .input
+  width: 240px
   border: 1px solid $border-input
   padding: 23px
   border-radius: 10px
 .section
+  padding: 90px 0
   &-title
-    font-size: 24px
+    font-size: 30px
     +bold
     text-align: center
   &-subtitle
@@ -42,4 +33,30 @@ body
   &__left, &__right
     &:hover
       cursor: pointer
+        
+@media (max-width: 1200px)
+  .container
+    width: 760px
+@media (max-width: 768px)
+  .container
+    max-width: 750px
+    width: 90%
+@media (max-width: 567px)
+  .container
+    max-width: 450px
+    width: 90%
+@media (max-width: 360px)
+  .container
+    max-width: 277px
+    width: 96%
+  .section
+    padding: 52px 0
+    &-title
+      font-size: 18px
+      +bold
+      text-align: center
+    &-subtitle
+      font-size: 14px
+
+
 

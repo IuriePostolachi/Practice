@@ -1,21 +1,12 @@
-.price
-	&__title
-		padding-top: 80px
-		margin: auto
-		margin-bottom: 48px
-		+bold
-		font-size: 30px
-		width: 515px
-		line-height: 1.5
-	&__subtitle
-		margin-bottom: 59px
-		text-align: center
-		display: block
-		+reg
-		font-size: 20px
-	&__card
-		margin-bottom: 30px
-		padding-bottom: 26px
+.price    
+  &__title 
+    margin-bottom: 58px
+  &__subtitle
+    margin-bottom: 59px
+    display: block
+    text-align: center
+  &__card
+    margin-bottom: 30px
 .card
 	text-align: center
 	border: 1px solid $border-card
@@ -23,7 +14,7 @@
 	&:hover
 		box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
 	&__text
-		padding: 20px
+		padding: 40px
 	&__title
 		margin-top: 0
 		margin-bottom: 17px
@@ -74,3 +65,13 @@
 		display: flex
 		justify-content: space-around
 		flex-wrap: wrap
+
+@media (max-width: 360px)
+	.card
+		&__text
+			padding: 30px
+		&__title
+			font-size: 14px
+		&__link
+			font-size: 16px
+

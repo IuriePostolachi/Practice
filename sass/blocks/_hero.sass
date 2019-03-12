@@ -1,18 +1,13 @@
 .hero
-  padding-top: 50px
+  padding: 50px 0
   background-color: $secondary
-  &-section
-    padding: 
   &-block
     display: flex
-    margin-bottom: 10px
+    justify-content: space-between
   &-text
-    flex-basis: 50%
-    padding-right: 100px
-    margin-left: -3px
+    flex-basis: 45%
     &__title
       font-size: 41px
-      font-weight: 800
       line-height: 55px
       margin-bottom: 38px
       +bold
@@ -42,11 +37,10 @@
       margin-right: 30px
     &__text
       max-width: 270px
+      width: 65%
       font-size: 14px 
   &-image
-    margin-right: -32px
-    margin-top: -2px
-    padding-left: 9px
+    margin:auto    
     &__top-main
       max-width: 106%
       
@@ -54,42 +48,35 @@
   .hero
     &-block
       flex-direction: column
+    &-image
+      margin: auto
     &-list
       margin-bottom: 44px
     &-text
-      margin-right: 0
+      padding-right: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__title
+        text-align: center
 
 @media (max-width: 768px)
   .hero
     &-text
       &__title
-        font-size: 24px
+        font-size: 21px
         line-height: 1.4
         margin-bottom: 15px
       &__subtitle
         font-size: 16px
         margin-bottom: 28px
     &-list
-      &__item
-        margin-bottom: 20px
       &__text
         font-size: 12px
 
-@media (max-width: 322px)
+@media (max-width: 567px)
   .hero
     &-text
+      display: block
       &__title
-        font-size: 24px
-        line-height: 1.4
-        margin-bottom: 15px
-      &__subtitle
-        font-size: 16px
-        margin-bottom: 28px
-    &-list
-      &__item
-        margin-bottom: 20px
-      &__text
-        font-size: 12px
-    &-image
-      &__top-main
-        max-width: 350px
+        text-align: left

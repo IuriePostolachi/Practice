@@ -13,9 +13,15 @@
     text-align: center
   &__input
     width: 100%
+    display: block
+    height: 60px
     max-width: 370px
     margin-bottom: 15px
     margin-bottom: 30px
+    &:focus
+      border-radius: 10px
+      border-color: $main-color
+      outline: none
   &__button
     display: block
     height: 70px
@@ -23,13 +29,13 @@
     max-width: 370px
     margin-top: 15px
     margin-bottom: 33px
-    margin-right: auto
-    margin-left: auto
+    margin: auto
 .interview
   padding-right: 70px
   &__title
     margin-bottom: 50px
     font-size: 22px
+    line-height: 33px
     +bold
   &__subtitle
     display: block
@@ -44,10 +50,10 @@
       margin-bottom: 25px
       +bold
     &__counter
-      display: inline-block
-      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
       line-height: 35px
-      font-size: 14px
       width: 35px
       height: 35px
       border: 2px solid $text-color
@@ -55,10 +61,12 @@
       border-radius: 50%
     &__text
       max-width: 400px
+      font-size: 18px
 .form
   &__title
     margin-bottom: 50px
     font-size: 22px
+    line-height: 33px
     +bold
   &__subtitle
     display: block
@@ -66,8 +74,13 @@
     margin-bottom: 95px
   &__description
     display: block
+
 @media (max-width: 1200px)
   .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: left center, right center
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
     &__form
       padding-left: 30px
   .interview
@@ -78,15 +91,16 @@
     &__subtitle
       margin-bottom: 30px
     &-list
+      min-width: 270px
       &__text
         font-size: 14px
-        max-width: 300px
       &__counter
         margin-right: 20px 
   .form
     &__title
       font-size: 20px
-      margin-bottom: 38px
+      max-width: 220px
+      margin-bottom: 15px
     &__subtitle
       margin-bottom: 30px
     &__description
@@ -102,10 +116,26 @@
       flex-direction: column
     &__form
       margin-top: 80px
+    &__title
+      padding-top: 50px
+      margin: auto
+      margin-bottom: 15px
     &__button
       margin-left: auto
       margin-right: auto
   .interview
     padding-bottom: 45px
+    padding-right: 0
+    &-list
+      &__text
+        max-width: 330px
+
+@media (max-width: 360px)
+  .interview
+    &-list
+      &__text
+        max-width: 200px
+    
+
 
 
