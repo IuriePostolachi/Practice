@@ -1198,7 +1198,7 @@ img {
 /* стили для подвала */
 .footer {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .map {
@@ -1322,8 +1322,8 @@ img {
     margin-left: -6px;
     line-height: 1.25;
   }
-  .ymaps-2-1-73-map {
-    height: 450px;
+  .footer {
+    padding-bottom: 20px;
   }
 }
 
