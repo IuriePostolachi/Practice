@@ -5,11 +5,12 @@
   background-repeat: repeat-y, no-repeat
   &-block
     display: flex
+    margin-top: -12px
   &__interview 
     flex-basis: 50%
   &__form
     flex-basis: 50%
-    padding-left: 200px
+    padding-left: 220px
     text-align: center
   &__input
     width: 100%
@@ -31,9 +32,9 @@
     margin-bottom: 33px
     margin: auto
 .interview
-  padding-right: 70px
+  padding-right: 69px
   &__title
-    margin-bottom: 50px
+    margin-bottom: 43px
     font-size: 22px
     line-height: 33px
     +bold
@@ -41,14 +42,17 @@
     display: block
     font-size: 16px
     margin-bottom: 95px
+    +bold
   &-list
     list-style: none
     padding: 0
     &__item
       display: flex
       align-items: center
-      margin-bottom: 25px
+      margin-bottom: 26px
       +bold
+      &:last-child
+        margin-top: 42px
     &__counter
       display: flex
       align-items: center
@@ -64,16 +68,19 @@
       font-size: 18px
 .form
   &__title
-    margin-bottom: 50px
+    margin-bottom: 46px
+    margin-top: 18px
     font-size: 22px
     line-height: 33px
     +bold
   &__subtitle
     display: block
     font-size: 16px
-    margin-bottom: 95px
+    margin-bottom: 50px
   &__description
     display: block
+    margin-top: 30px
+    font-size: 15px
 
 @media (max-width: 1200px)
   .brif
@@ -131,10 +138,54 @@
         max-width: 330px
 
 @media (max-width: 360px)
+  .brif    
+    &-block
+      margin-top: -29px
+    &__input
+      margin-left: -30px
+      width: 112%
+    &__button
+      margin-left: -30px
+      width: 112%
   .interview
+    padding-bottom: 0
     &-list
       &__text
-        max-width: 200px
+        max-width: 205px
+      &__counter
+        margin-right: 10px
+      &__item
+        margin-bottom: 24px
+        &:last-child
+          margin-top: 20px
+    &__title
+      font-size: 18px
+      line-height: 1.25
+      width: 268px
+      margin-bottom: 14px
+    &__subtitle
+      font-size: 14px
+      width: 180px
+      margin-left: 3px
+      margin-bottom: 38px
+  .form
+    &__title
+      font-size: 18px
+      max-width: 115%
+      margin-bottom: 23px
+      line-height: 1.45
+      margin-left: -30px
+    &__subtitle
+      font-size: 14px
+      margin-left: -30px
+      margin-bottom: 34px
+    &__description
+      font-size: 14px
+      width: 143px
+      margin-left: 35px
+      line-height: 1.6
+      margin-top: 25px
+      margin-bottom: -20px
     
 
 
