@@ -1402,4 +1402,19 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
+
+@media (max-width: 360px) {
+  .modal-dialog {
+    padding: 5px;
+  }
+  .modal-dialog__title {
+    font-size: 12px;
+  }
+  .modal-input__name, .modal-input__phone {
+    font-size: 12px;
+    margin-left: 5px;
+    width: 265px;
+    margin-top: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
