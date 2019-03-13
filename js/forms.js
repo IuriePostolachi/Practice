@@ -7,10 +7,6 @@ $(document).ready(function () {
         required: true,
         minlength: 2,
         maxlength: 15
-      },
-      email: {
-        required: true,
-        email: true
       }
     },
     messages: {
@@ -18,10 +14,6 @@ $(document).ready(function () {
         required: "Пожалуйста введите ваше имя",
         minlength: jQuery.validator.format(" Длина от {0} букв"),
         maxlength: jQuery.validator.format(" Длина до {0} букв")
-      },
-      email: {
-        required: "Нам нужен ваш емайл для отправки информаций",
-        email: "Введите емайл правильно"
       }
     }
   });
@@ -45,7 +37,7 @@ $(document).ready(function () {
         maxlength: jQuery.validator.format(" Длина до {0} букв")
       },
       email: {
-        required: "Нам нужен ваш емайл для отправки информаций",
+        required: "На емайл отправим информацию",
         email: "Введите емайл правильно"
       }
     }
@@ -57,10 +49,6 @@ $(document).ready(function () {
         required: true,
         minlength: 2,
         maxlength: 15
-      },
-      email: {
-        required: true,
-        email: true
       }
     },
     messages: {
@@ -68,10 +56,6 @@ $(document).ready(function () {
         required: "Пожалуйста введите ваше имя",
         minlength: jQuery.validator.format(" Длина от {0} букв"),
         maxlength: jQuery.validator.format(" Длина до {0} букв")
-      },
-      email: {
-        required: "Нам нужен ваш емайл для отправки информаций",
-        email: "Введите емайл правильно"
       }
     }
   });

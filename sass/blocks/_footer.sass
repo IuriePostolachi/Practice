@@ -9,13 +9,14 @@
   height: 100%
 .contacts
   flex-basis: 50%
-  padding-top: 100px
-  padding-left: 210px
+  padding-top: 75px
+  padding-left: 212px
   &__title
     +bold
     font-size: 22px
-    line-height: 1.4
-    margin-bottom: 100px
+    line-height: 1.5
+    margin-bottom: 92px
+    margin-top: 16px
   &-block
     display: flex
     justify-content: flex-end
@@ -23,6 +24,7 @@
     padding: 0
     list-style: none
     line-height: 1.4
+    font-size: 16px
     &__icon
       width: 20px
       height: 20px
@@ -32,12 +34,14 @@
     &__item
       display: flex
       align-items: flex-start
-      margin-bottom: 39px
+      margin-bottom: 25px
+    &__text
+      +bold
+      margin-top: 0
     &__link
       text-decoration: none
-      +bold
       color: $text-color
-      &:hover
+      &:hover 
         cursor: pointer
 
 @media (max-width: 1200px)
@@ -64,6 +68,17 @@
 @media (max-width: 360px)
   .contacts
     padding-left: 10px
+    padding-bottom: 14px
+    &-list
+      margin-left: -10px
+      margin-top: -4px
+    &__title
+      margin-top: -37px
+      margin-left: -6px
+      line-height: 1.25
+  .ymaps-2-1-73-map
+    height: 450px
+
 
   
     
