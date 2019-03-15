@@ -1,0 +1,59 @@
+.navbar
+  padding-top: 7px
+  padding-bottom: 5px  
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center
+    text-align: right
+    line-height: 0.9
+    margin-top: -6px
+  &__address
+    display: flex
+    justify-content: flex-end
+    font-size: 13px
+    margin-right: 2px
+  &__button
+    margin-left: 28px
+    padding: 17px 30px
+    +bold
+    font-size: 13px
+  &__phone
+    min-width: 172px
+    color: $text-color
+    font-size: 20px
+    text-decoration: none
+    margin-top: 10px    
+    +bold
+  &__contacts
+    display: flex
+    flex-direction: column
+
+@media (max-width: 768px)
+  .navbar
+    &__button
+      font-size: 12px
+      padding: 15px 26px
+
+@media (max-width: 572px)
+  .navbar
+    padding-top: 8px
+    padding-bottom: 17px    
+    &__contacts
+      display: none
+    &__button
+      padding: 15px 26px
+      font-size: 9px      
+      width: 137px
+      height: 39px
+      border-radius: 5px
+      background-color: $main-color
+    &__logo
+      width: 91px
+      height: 44px
+
+
+
