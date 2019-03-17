@@ -24,7 +24,11 @@
       position: absolute
       border-radius: 10px
       background-color: $main-color
+      outline: none
       +bold
+      &:hover
+        background: lighten($main-color, 10%)
+        cursor: pointer
     &__title
       +bold
       font-size: 18px
@@ -49,7 +53,11 @@
       border: none
       margin: auto
       padding: 15px 17px
+      outline: none
       +bold
+      &:hover
+        background: lighten($main-color, 10%)
+        cursor: pointer
 
 @media (max-width: 560px)
   .modal
