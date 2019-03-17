@@ -47,7 +47,7 @@
                 <div class="navbar__info">
                     <div class="navbar__contacts">
                         <span class="navbar__address">Калуга, Москва, МО</span>
-                        <a href="" class="navbar__phone">+7 (495) 42-251-31</a>
+                        <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
                     </div>
                     <!-- /.navbar__contacts -->
                     <button class="button navbar__button" onclick="ym(52751719, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
@@ -376,9 +376,9 @@
     </main>
 
     <footer class="footer">
-        <div class="map" id="map" style=" height: 600px">
-            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<51ba7602-da4a-487c-9e47-cc62c59d8ba8>"></script>
-            <script src="js/request_map.js"></script>
+        <div class="map" id="map" style="height: 600px">
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhLA_30V8ktv_fTZC6sVa5mDAzaiVxRd4&callback=initMap">
+            </script>
         </div>
         <div class="container">
             <div class="contacts-block">
@@ -391,7 +391,7 @@
                                 <img src="img/footer/map-placeholder.png" alt="">
                             </span>
                             <span>г. Москва<br>
-                                <p class="contacts-list__text">ул. Ленинга, д. 10,<br>корпус 2, оф. 308</p>
+                                <span class="contacts-list__text">ул. Ленинга, д. 10,<br>корпус 2, оф. 308</span>
                             </span>
                         </li>
                         <li class="contacts-list__item">
@@ -399,7 +399,7 @@
                                 <img src="img/footer/clock.png" alt="">
                             </span>
                             <span>Режим работы:<br>
-                                <p class="contacts-list__text">с 9:00 до 18:00</p>
+                                <span class="contacts-list__text">с 9:00 до 18:00</span>
                             </span>
                         </li>
                         <li class="contacts-list__item">
@@ -407,8 +407,9 @@
                                 <img src="img/footer/phone.png" alt="">
                             </span>
                             <span>Телефон:<br><a class="contacts-list__link" href="tel:+7(495)42-251-31">
-                                    <p class="contacts-list__text">+7 (495) 42-251-31</p>
-                                </a></span>
+                                    <span class="contacts-list__text">+7 (495) 42-251-31</span>
+                            </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -466,6 +467,10 @@
     <script>
         /* Инициализация скрипта wow.js */
         new WOW().init();
+    </script>
+
+    <!-- Скрипт для google карты -->
+    <script src="js/request_map.js">
     </script>
 
 </body>
