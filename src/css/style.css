@@ -1974,6 +1974,12 @@ img {
   height: 100%;
 }
 
+.map-style {
+  width: 100%;
+  height: 640px;
+  border: 0;
+}
+
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
