@@ -638,7 +638,19 @@ img {
 #username-error {
   position: absolute;
   display: block;
-  margin-top: -22px;
+  margin-top: -24px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-style: oblique;
+  font-size: 14px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+#phone-error {
+  position: absolute;
+  display: block;
+  margin-top: -24px;
   padding-left: 20px;
   padding-bottom: 0;
   font-style: oblique;
@@ -650,7 +662,7 @@ img {
 #email-error {
   position: absolute;
   display: block;
-  margin-top: -22px;
+  margin-top: -24px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -698,6 +710,9 @@ img {
     width: 90%;
   }
   #username-error {
+    font-size: 12px;
+  }
+  #phone-error {
     font-size: 12px;
   }
   #email-error {
@@ -1100,6 +1115,24 @@ img {
   padding-left: 32px;
 }
 
+#phone-offer-error {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 400px;
+  margin-top: -22px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-style: oblique;
+  font-size: 14px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -1121,6 +1154,13 @@ img {
     width: 290px;
     text-align: left;
     margin-left: 0;
+  }
+  #phone-offer-error {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: auto;
+    margin-top: -24px;
   }
 }
 
@@ -1182,6 +1222,12 @@ img {
     max-width: 214px;
     text-align: center;
     display: block;
+  }
+}
+
+@media (max-width: 567px) {
+  #phone-offer-error {
+    font-size: 12px;
   }
 }
 
@@ -2165,7 +2211,7 @@ img {
     font-size: 12px;
     margin-left: auto;
     margin-right: auto;
-    width: 265px;
+    width: 285px;
     margin-top: 5px;
   }
 }
