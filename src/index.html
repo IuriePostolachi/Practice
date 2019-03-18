@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Практика - Домашнее задание №24</title>
 </head>
+
 <body>
 
     <!-- Yandex.Metrika counter -->
     <script>
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () {
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
                 (m[i].a = m[i].a || []).push(arguments)
             };
             m[i].l = 1 * new Date();
@@ -46,11 +48,10 @@
                 <div class="navbar__info">
                     <div class="navbar__contacts">
                         <span class="navbar__address">Калуга, Москва, МО</span>
-                        <a href="" class="navbar__phone">+7 (495) 42-251-31</a>
+                        <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
                     </div>
                     <!-- /.navbar__contacts -->
-                    <button class="button navbar__button" onclick="ym(52751719, 'reachGoal', 'button'); return true;"
-                        id="button">Перезвоните мне</button>
+                    <button class="button navbar__button" onclick="ym(52751719, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
                 </div>
                 <!-- /.navbar__info -->
             </div>
@@ -112,8 +113,7 @@
             <div class="container">
                 <!-- Блок запроса клиента бесплатного дизайна  -->
                 <div class="offer-block">
-                    <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и
-                        реализуем его!</h2>
+                    <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <!-- /.section-title -->
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
                         дизайн-проекта!</span>
@@ -142,8 +142,7 @@
         <!-- Секция слайда выполненных работ -->
         <section class="portfolio section">
             <div class="container">
-                <h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в
-                    квартирах и домах</h2>
+                <h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
                 <div class="slider">
                     <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-1.jpg" alt="slider-1"></div>
                     <div class="slider__item"><img class="slider__img" src="img/portfolio/slider-2.jpg" alt="slider-2"></div>
@@ -259,8 +258,8 @@
         <!-- Секция 5 шагов до ремонта -->
         <section class="section steps">
             <div class="container">
-                <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас
-                    время</h2>
+                <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время
+                </h2>
                 <!-- /.section-title steps__title -->
                 <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
                 <!-- /.section-subtitle steps__subtitle -->
@@ -332,8 +331,8 @@
             <div class="container">
                 <div class="brif-block">
                     <div class="interview brif__interview">
-                        <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по
-                            телефону</h3>
+                        <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
+                        </h3>
                         <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
                         <ul class="interview-list">
                             <li class="interview-list__item">
@@ -378,22 +377,22 @@
     </main>
 
     <footer class="footer">
-        <div class="map"  id="map" style=" height: 600px">
-            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<51ba7602-da4a-487c-9e47-cc62c59d8ba8>"></script>
-            <script src="js/request_map.js"></script>
+        <div class="map" id="map" style="height: 600px">
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhLA_30V8ktv_fTZC6sVa5mDAzaiVxRd4&callback=initMap">
+            </script>
         </div>
         <div class="container">
             <div class="contacts-block">
                 <div class="contacts">
-                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас<br> по всем вопросам
-                        ремонта</h3>
+                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас<br> по всем вопросам ремонта
+                    </h3>
                     <ul class="contacts-list">
                         <li class="contacts-list__item">
                             <span class="contacts-list__icon">
                                 <img src="img/footer/map-placeholder.png" alt="">
                             </span>
                             <span>г. Москва<br>
-                                <p class="contacts-list__text">ул. Ленинга, д. 10,<br>корпус 2, оф. 308</p>
+                                <span class="contacts-list__text">ул. Ленинга, д. 10,<br>корпус 2, оф. 308</span>
                             </span>
                         </li>
                         <li class="contacts-list__item">
@@ -401,7 +400,7 @@
                                 <img src="img/footer/clock.png" alt="">
                             </span>
                             <span>Режим работы:<br>
-                                <p class="contacts-list__text">с 9:00 до 18:00</p>
+                                <span class="contacts-list__text">с 9:00 до 18:00</span>
                             </span>
                         </li>
                         <li class="contacts-list__item">
@@ -409,8 +408,9 @@
                                 <img src="img/footer/phone.png" alt="">
                             </span>
                             <span>Телефон:<br><a class="contacts-list__link" href="tel:+7(495)42-251-31">
-                                    <p class="contacts-list__text">+7 (495) 42-251-31</p>
-                                </a></span>
+                                    <span class="contacts-list__text">+7 (495) 42-251-31</span>
+                            </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -429,7 +429,7 @@
             <form action="#" class="form modal__form">
                 <fieldset class="modal-dialog__title">
                     <legend class="legend">Ваши контактные данные</legend>
-                    <label  class="modal-label__name">Как вас зовут</label>
+                    <label class="modal-label__name">Как вас зовут</label>
                     <!-- /.modal-label__name -->
                     <input type="text" name="username" class="input modal-input__name" placeholder="Имя" autofocus><br>
                     <label class="modal-label__phone">Ваш номер</label>
@@ -468,6 +468,10 @@
     <script>
         /* Инициализация скрипта wow.js */
         new WOW().init();
+    </script>
+
+    <!-- Скрипт для google карты -->
+    <script src="js/request_map.js">
     </script>
 
 </body>
