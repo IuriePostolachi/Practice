@@ -647,18 +647,6 @@ img {
   font-weight: 700;
 }
 
-#phone-error {
-  position: absolute;
-  display: block;
-  margin-top: -24px;
-  padding-left: 20px;
-  padding-bottom: 0;
-  font-style: oblique;
-  font-size: 14px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-
 #email-error {
   position: absolute;
   display: block;
@@ -1700,7 +1688,6 @@ img {
   display: block;
   height: 60px;
   max-width: 370px;
-  margin-bottom: 15px;
   margin-bottom: 30px;
 }
 
@@ -1803,6 +1790,18 @@ img {
   display: block;
   margin-top: 30px;
   font-size: 15px;
+}
+
+#phone-error {
+  position: absolute;
+  display: block;
+  margin-top: -24px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-style: oblique;
+  font-size: 14px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -2184,6 +2183,19 @@ img {
   cursor: pointer;
 }
 
+#phone-modal-error {
+  position: absolute;
+  display: block;
+  margin-top: -24px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: oblique;
+  font-size: 14px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 560px) {
   .modal-dialog {
     padding: 10px;
@@ -2197,6 +2209,9 @@ img {
     margin-right: auto;
     width: 365px;
     margin-top: 10px;
+  }
+  #phone-modal-error {
+    font-size: 12px;
   }
 }
 

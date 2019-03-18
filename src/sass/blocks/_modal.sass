@@ -58,6 +58,16 @@
       &:hover
         background: lighten($main-color, 10%)
         cursor: pointer
+#phone-modal-error
+  position: absolute
+  display: block
+  margin-top: -24px
+  padding-left: 20px
+  margin-right: auto
+  margin-left: auto
+  font-style: oblique
+  font-size: 14px
+  +bold 
 
 @media (max-width: 560px)
   .modal
@@ -72,6 +82,8 @@
         margin-right: auto
         width: 365px  
         margin-top: 10px
+  #phone-modal-error
+    font-size: 12px 
 
 @media (max-width: 360px)
   .modal
