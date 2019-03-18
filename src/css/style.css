@@ -638,7 +638,7 @@ img {
 #username-error {
   position: absolute;
   display: block;
-  margin-top: -20px;
+  margin-top: -22px;
   padding-left: 20px;
   padding-bottom: 0;
   font-style: oblique;
@@ -650,7 +650,7 @@ img {
 #email-error {
   position: absolute;
   display: block;
-  margin-top: -20px;
+  margin-top: -22px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -1819,6 +1819,9 @@ img {
   }
   .brif__form {
     margin-top: 80px;
+    width: 401px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .brif__title {
     padding-top: 50px;
@@ -1862,6 +1865,9 @@ img {
     margin-left: -30px;
     font-size: 14px;
     width: 112%;
+  }
+  .brif__form {
+    width: 277px;
   }
   .interview {
     padding-bottom: 0;
